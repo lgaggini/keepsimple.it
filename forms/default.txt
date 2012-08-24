@@ -1,0 +1,17 @@
+<h2><txp:permlink><txp:title /></txp:permlink></h2> 
+<h6><txp:category1 link="1" title="1" />
+<txp:if_article_category number="2" >
+, <txp:category2 link="2" title="2" />
+</txp:if_article_category ></h6>
+
+<p class="date">Postato il <em><txp:posted /></em></p>
+
+<txp:article_image thumbnail="1" />
+
+<txp:if_section name=",">
+  <txp:excerpt /><p class="date"><txp:comments_invite /></p>
+<txp:else />
+  <txp:body />
+</txp:if_section>
+
+<hr />

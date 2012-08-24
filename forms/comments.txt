@@ -1,0 +1,6 @@
+<div class="<txp:ajw_comment_alt />">
+<fieldset>
+<legend><txp:comment_name /> &middot; <txp:comment_time /></legend>
+<txp:comment_message />
+</fieldset>
+</div>

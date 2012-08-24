@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+
+<txp:if_individual_article>
+<title><txp:title /> - <txp:category1 /> - <txp:site_name /></title>
+<txp:else />
+<txp:if_section name="filosofia, contatti, makingof, archivio">
+<title><txp:section /> - <txp:site_name /></title>
+<txp:else />
+<txp:if_category name="">
+<txp:if_search>
+<title>Risultati della ricerca per: <txp:search_term /> - <txp:site_name /></title>
+<txp:else />
+<title><txp:site_slogan /> - <txp:site_name /></title>
+</txp:if_search>
+<txp:else />
+<title><txp:category /> - <txp:site_name /></title>
+</txp:if_category>
+</txp:if_section>
+</txp:if_individual_article>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="it" />
+<meta name="robots" content="all" />
+
+<meta name="copyright" content="Creative Commons Attribution-ShareAlike 3.0 Unported Lorenzo Gaggini 2010" />
+<meta name="keywords" content="KISS, semplicità, minimalismo, downshifting, decluttering, internet, software libero, cultura libera, tecnologia, strumenti, hacking, anticonformismo, libertà, diritti digitali" />
+<meta name="description" content="Riflessioni e articoli su Minimalismo, Cultura Libera, Software Libero e Tecnologia per semplificare la propria vita e ritrovare curiosità, passione e serenità." />
+
+<style type="text/css" title="keepsimple"> @import url(<txp:css format="url" />); </style>
+
+<txp:feed_link flavor="atom" format="link" label="Atom" section="" />
+<txp:feed_link flavor="rss" format="link" label="RSS" section="" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+
+<ul id="accessability">
+	<li><a href="#content" title="Skip to Content">Skip to Content</a></li>
+	<li><a href="#sidebar" title="Skip to Sidebar">Skip to Sidebar</a></li>
+	<li><a href="#search" title="Skip to Search">Skip to Search</a></li>
+</ul><!-- end #accessability -->
+
+<div id="wrap">
+
+<div id="masthead">
+
+<h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+
+<div id="logo">
+	<txp:link_to_home><img src="<txp:link_to_home />images/logo.gif" alt="keepsimple.it" title="keepsimple.it"/></txp:link_to_home>
+</div><!-- end #logo -->
+
+<ul id="nav">
+	<li<txp:if_section name=","> id="on"</txp:if_section>><a href="<txp:link_to_home />" title="Home">Home</a></li>
+	<li<txp:if_section name="filosofia"> id="on"</txp:if_section>><a href="<txp:link_to_home />filosofia" title="Filosofia">Filosofia</a></li>
+	<li<txp:if_section name="contatti"> id="on"</txp:if_section>><a href="<txp:link_to_home />contatti" title="Autore">Autore</a></li>
+        <li<txp:if_section name="makingof"> id="on"</txp:if_section>><a href=" <txp:link_to_home />makingof" title="Making Of">Making Of</a></li>
+        <li<txp:if_section name="archivio"> id="on"</txp:if_section>><a href=" <txp:link_to_home />archivio" title="Archivio">Archivio</a></li>
+</ul><!-- end #nav -->
+
+<div class="clear" style="height: 1px;">&nbsp;</div>
+
+</div><!-- end #masthead -->
+
+<div id="content-wrap">
+
+<div id="pagination">
+<p><txp:link_to_home>Home</txp:link_to_home>
+<txp:if_category>
+> <txp:category />
+</txp:if_category>
+<txp:if_section name="articoli">
+> Articoli<txp:>
+</txp:if_section>
+<txp:if_section name="filosofia"> 
+> Filosofia
+</txp:if_section>
+<txp:if_section name="makingof"> 
+> Making Of
+</txp:if_section>
+<txp:if_section name="contatti"> 
+> Contatti</txp:if_section>
+<txp:if_section name="archivio">
+> Archivio
+</txp:if_section></p>
+</div><!-- end #pagination -->
+
+<div id="search">
+<form action="<txp:link_to_home />" method="get"><input type="text" id="searchinputbox" name="q" value="Cerca" /></form>
+</div>
+
+<div class="clear" style="height: 1px;">&nbsp;</div>
+
+<div id="content">
+
+<txp:article_custom limit="99999" form="article_listing" />
+
+</div><!-- end #content -->
+
+<div id="sidebar">
+
+<p><cite>"It seems that perfection is reached not when there is nothing left to add, but when there is nothing left to take away"</cite>.<br /> <strong>(Antoine de Saint Exupéry)</strong></p>
+
+<txp:category_list break="li" label="Categorie" labeltag="h3" this_section="0" type="article" wraptag="ul" />
+
+<h3>Abbonati</h3>
+<ul>
+	<li><img src="/images/feed-icon.gif" alt="Feed"></img>&nbsp;<txp:feed_link label="RSS" section="" /></li>
+	<li><img src="/images/feed-icon.gif" alt="Feed"></img>&nbsp;<txp:feed_link flavor="atom" label="Atom" section="" /></li>
+</ul>
+
+<txp:linklist category="siti-amici" break="li" label="Siti Amici" labeltag="h3" sort="linksort asc" wraptag="ul" />
+
+<a href="http://www.villenoire.net/mini/wordpress/" target="_blank"><img src="http://dl.dropbox.com/u/12706770/antipixelMinimalistiIt_2.png" alt="Link Minimalisti.it Network" title="Link Minimalisti.it Network"></img></a>
+
+</div><!-- end #sidebar -->
+
+<div class="clear" style="height: 1px;">&nbsp;</div>
+
+</div><!-- end #content-wrap -->
+
+<div id="footer">
+
+<a href="https://www.gnu.org"><img src="/images/gnu-powered.png" alt="Powered by GNU" title="Powered by GNU"> <a href="https://www.textpattern.com"><img src="/images/textpattern.gif" alt="Powered by Textpattern" title="Powered by Textpattern"></a> <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/images/by-sa.png" alt="Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)" title="Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)"></a> <a href="http://validator.w3.org/check?uri=referer"><img src="/images/w3c-xhtml.png" alt="Valid XHTML 1.0" title="Valid XHTML 1.0"></a> <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="/images/w3c-css.gif" alt="Valid CSS 3" title="Valid CSS 3"></a><br>
+Template basato su <a href="http://www.textplates.com/browser/12/about" title="Slate">Slate (GPL) </a> di <a href="http://www.massiveblue.com" title="Massive Blue">Massive Blue</a> e scaricabile <a href="http://www.keepsimple.it/file_download/4/KeepItSimple.7z" title="">qui (GPL)</a><br />
+
+</div><!-- end #footer -->
+
+</div><!-- end #wrap -->
+
+</body>
+</html>

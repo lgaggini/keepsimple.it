@@ -1,0 +1,7 @@
+<div id="comment">
+<h3>Commenti</h3>
+<txp:comments />
+<txp:if_comments_allowed>
+<txp:comments_form />
+</txp:if_comments_allowed>
+</div>

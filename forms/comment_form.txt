@@ -1,0 +1,12 @@
+<txp:comments_error wraptag="ul" break="li" />
+
+<h3>Lascia un commento</h3>
+<div id="comment-form">
+<txp:comments_error />
+<p><strong>Aggiungi il tuo commento.</strong> Anteprima e invia</p>
+<p><label for="name">Nome: </label><br /><txp:comment_name_input /></p>
+<p><label for="email">Email: </label><small>Nascosta</small><br /><txp:comment_email_input /></p>
+<p><label for="web">http://</label><br /><txp:comment_web_input /></p>
+<p><label for="message">Messaggio: </label><small><txp:comments_help /></small><br /><txp:comment_message_input /></p>
+<p><span class="check"><txp:comment_remember /> </span><txp:comment_preview /> <txp:comment_submit /></p>
+</div>
