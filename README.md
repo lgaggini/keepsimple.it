@@ -1,7 +1,7 @@
-# [keepsimple.it](www.keepsimple.it) Textpattern Template | 2010
+# [keepsimple.it](http://www.keepsimple.it) Textpattern Template | 2010
 ### (c) Lorenzo Gaggini - lgaggini.net
 ### based on Slate Template | 2007
-### (c) [Sam Brown](www.massiveblue.com)
+### (c) [Sam Brown](http://www.massiveblue.com)
 ### This template is released under GPLv3 License.
 
 
