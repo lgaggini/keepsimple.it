@@ -1,8 +1,8 @@
 # [keepsimple.it](http://www.keepsimple.it) Textpattern Template | 2010
-### (c) Lorenzo Gaggini - lgaggini.net
-### based on Slate Template | 2007
-### (c) [Sam Brown](http://www.massiveblue.com)
-### This template is released under GPLv3 License.
+#### (c) Lorenzo Gaggini - lgaggini.net
+#### based on Slate Template | 2007
+#### (c) [Sam Brown](http://www.massiveblue.com)
+#### This template is released under GPLv3 License.
 
 
 Backup your install, that means everything!! Don't risk it!
